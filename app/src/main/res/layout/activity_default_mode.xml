@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".DefaultMode">
+    <TextView
+        android:id="@+id/text_default_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default Screen Mode :"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="15dp"
+    android:background="@drawable/normal_button">
+    <Spinner
+        android:id="@+id/spinnerDefaultScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:paddingVertical="10dp"
+        android:textAlignment="center"
+        />
+</LinearLayout>
+    <Button
+        android:id="@+id/save_button_default"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/normal_button"
+        android:text="Save"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+</LinearLayout>

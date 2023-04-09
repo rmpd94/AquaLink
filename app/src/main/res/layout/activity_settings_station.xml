@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Station.SettingsStation"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Default Firebase Host :"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:layout_margin="1dp"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+        <EditText
+            android:id="@+id/firebase_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Firebase Database Host"
+            android:background="#FFFFFF"
+            android:padding="5dp"
+            android:layout_marginLeft="4dp"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Default Firebase Auth :"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:layout_margin="1dp"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+        <EditText
+            android:id="@+id/firebase_auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Firebase Database Secret"
+            android:background="#FFFFFF"
+            android:padding="5dp"
+            android:layout_marginLeft="4dp"
+            android:inputType="text" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="Save"
+        android:shadowColor="#C0C0C0"
+        android:background="@drawable/normal_button"/>
+</LinearLayout>

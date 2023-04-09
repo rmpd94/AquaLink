@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:id="@+id/root"
+    tools:context="com.aqualink.iot.AP.ApActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/buttonsc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/normal_button"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Schedule/Temp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:padding="10dp"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutSch"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginBottom="5dp">
+        <Button
+            android:id="@+id/setDateTme"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/normal_button"
+            android:text="Set Device DateTime"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+        <Button
+            android:id="@+id/getStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_button"
+            android:text="Refresh"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F60B06"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            />
+
+        <TextView
+            android:id="@+id/tvTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="#000000"
+            android:padding="4dp"
+            android:textColor="#00FF7F"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearLayoutSch"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_margin="3dp"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:text="POWER1"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/button1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.175"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="111dp"
+                android:layout_height="103dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/offbutton"
+                android:text="OFF"
+                android:textColor="#00FF7F"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_margin="3dp"
+
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:text="POWER2"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/button2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.175"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="111dp"
+                android:layout_height="103dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/offbutton"
+                android:text="OFF"
+                android:textColor="#00FF7F"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_margin="3dp"
+
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:text="POWER3"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.175"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="111dp"
+                android:layout_height="103dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/offbutton"
+                android:text="OFF"
+                android:textColor="#00FF7F"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearLayout2"
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_margin="3dp"
+
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:text="POWER4"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/button4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.175"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="111dp"
+                android:layout_height="103dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/offbutton"
+                android:text="OFF"
+                android:textColor="#00FF7F"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_margin="3dp"
+
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:text="POWER5"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/button5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.175"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="111dp"
+                android:layout_height="103dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/offbutton"
+                android:text="OFF"
+                android:textColor="#00FF7F"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_margin="3dp"
+
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:text="POWER6"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/button6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.175"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="111dp"
+                android:layout_height="103dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/offbutton"
+                android:text="OFF"
+                android:textColor="#00FF7F"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

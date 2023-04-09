@@ -1,0 +1,145 @@
+<html>
+<head>
+</head>
+<style>
+body {background-color: powderblue;}
+h1 {text-align: center;}
+h4 {text-align: center;color: red;}
+h3 {text-align: center; color: red;}
+label   {display: inline-block; color: black; margin: 2px auto; width:100px; }
+input    {display: inline-block; color: blue; margin: 2px auto;}
+button {margin: 5px auto;
+        display:block;}
+form {
+  width: 300px;
+  margin: 50px auto;
+}
+</style>
+<body>
+<h1>Aqua Link Online Device Configuration Page</h1>
+<h3>Make sure you are connected to NodeMCU WiFi</h3>
+<form>
+    <fieldset>
+        <div>
+            <label for="ssid">WiFi Name</label>
+            <input value="" id="ssid" placeholder="Wifi SSID">
+        </div>
+        <div>
+            <label for="password">WiFi Password</label>
+            <input value="" id="password" placeholder="Wifi Password">
+        </div>
+        <div>
+            <label for="firebaseHost">Firebase Host</label>
+            <input value="" id="firebaseHost" placeholder="Firebase Host (only domain)">
+        </div>
+        <div>
+            <label for="firebaseAuth">Firebase Auth</label>
+            <input value="" id="firebaseAuth" placeholder="Firebase Auth">
+        </div>
+        <div>
+            <button class="primary" id="savebtn" type="button" onclick="myFunction()">Save</button>
+        </div>
+        <div>
+            <button class="primary" id="settime" type="button" onclick="setTime()">Set Device Time</button>
+        </div>
+        <div>
+            <button class="primary" id="showtime" type="button" onclick="showTime()">Show Device offline Time</button>
+        </div>
+    </fieldset>
+</form>
+<h4 id="response" ></h4>
+</body>
+<script>
+function myFunction()
+{
+
+  var ssid = document.getElementById("ssid").value;
+  var password = document.getElementById("password").value;
+  var firebaseHost = document.getElementById("firebaseHost").value;
+  var firebaseAuth = document.getElementById("firebaseAuth").value;
+  var data = {ssid:ssid, password:password, firebaseHost:firebaseHost, firebaseAuth:firebaseAuth};
+  var xhr = new XMLHttpRequest();
+  var url = "/settings";
+  response.innerText = "";
+  xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      if(xhr.responseText != null){
+        console.log(xhr.responseText);
+        alert(xhr.responseText);
+		response.innerText = xhr.responseText;
+      }
+    }
+  };
+  xhr.open("POST", url, true);
+  xhr.send(JSON.stringify(data));
+
+};
+function showTime()
+{
+
+  var xhr = new XMLHttpRequest();
+  var url = "/showtime";
+  response.innerText = "";
+  xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      if(xhr.responseText != null){
+        console.log(xhr.responseText);
+        alert(xhr.responseText);
+		response.innerText = xhr.responseText;
+      }
+    }
+  };
+  xhr.open("POST", url, true);
+  xhr.send();
+
+};
+function addZero(d) {
+  if (d < 10){
+    d = "0" + d;
+  }
+  return d;
+};
+function setTime()
+{
+
+  var today = new Date();
+  var year = today.getFullYear();
+  var mon = new Array();
+  mon[0] = 'Jan';
+  mon[1] = 'Feb';
+  mon[2] = 'Mar';
+  mon[3] = 'Apr';
+  mon[4] = 'May';
+  mon[5] = 'Jun';
+  mon[6] = 'Jul';
+  mon[7] = 'Aug';
+  mon[8] = 'Sep';
+  mon[9] = 'Oct';
+  mon[10] = 'Nov';
+  mon[11] = 'Dec';
+  var month = mon[today.getMonth()];
+  var date = addZero(today.getDate());
+  var hour =  addZero(today.getHours());
+  var min =  addZero(today.getMinutes());
+  var sec =  addZero(today.getSeconds());
+  var date = month +' '+date+' '+year;
+  var time = hour+':'+min+':'+sec;
+  var data = {date:date, time:time};
+  var xhr = new XMLHttpRequest();
+  var url = "/settime";
+  response.innerText = "";
+  xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      if(xhr.responseText != null){
+        console.log(xhr.responseText);
+        alert(xhr.responseText);
+		response.innerText = xhr.responseText;
+      }
+    }
+  };
+  xhr.open("POST", url, true);
+  xhr.send(JSON.stringify(data));
+
+};
+</script>
+</html>

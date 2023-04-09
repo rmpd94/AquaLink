@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aqualink.iot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Aqua Link"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="29">
+        <activity
+            android:name=".MCUsetupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".rgb.RgbAutoActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".rgb.RgbManualActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".rgb.RgbDeviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".rgb.RgbAddEditDeviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".rgb.RgbDeviceListActivity"
+            android:exported="false" />
+        <activity android:name=".Station.RenameButtons" />
+        <activity android:name=".AP.ApSetTemperature" />
+        <activity android:name=".Station.SetTemperature" />
+        <activity
+            android:name=".AP.ApSetScheduler"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AP.ApAddEditDevice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AP.ApDeviceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DefaultMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Station.AddEditDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Station.StationDeviceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Station.SetSchedulerActivity"
+            android:label="Set Schedule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AP.ScheduleApActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Station.SettingsStation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Station.ScheduleStationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Station.StationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AP.ApActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

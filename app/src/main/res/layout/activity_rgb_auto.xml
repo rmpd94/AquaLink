@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rgb.RgbAutoActivity"
+    android:background="@color/colorPink">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:id="@+id/btnStartRGB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@android:color/holo_purple"
+                    android:text="Starting"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:id="@+id/textStartRGB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:paddingVertical="10dp"
+                    android:background="@color/TextViewBack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <Button
+                    android:id="@+id/btnPeakRGB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@android:color/holo_purple"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:text="Peak" />
+
+                <TextView
+                    android:id="@+id/textPeakRGB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/TextViewBack"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:paddingVertical="10dp"
+                     />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/L2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0"
+            app:layout_constraintTop_toBottomOf="@id/L1"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btnSetTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@android:color/holo_purple"
+                android:text="Timings"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="5dp"
+                android:id="@+id/textSetTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/TextViewBack"
+                android:textSize="12dp"
+                android:paddingVertical="10dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/L2"
+            >
+            <Button
+                android:id="@+id/btnDemo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_purple"
+                android:text="Preview"
+                android:textSize="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <Button
+                android:id="@+id/btnSaveTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_purple"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text="Save"
+                android:textSize="15dp"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

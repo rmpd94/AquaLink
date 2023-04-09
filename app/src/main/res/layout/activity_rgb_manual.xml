@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rgb.RgbManualActivity"
+    android:background="@color/colorPink">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewRed"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Red"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18dp" />
+
+                <FrameLayout
+                    android:layout_width="32dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <SeekBar
+                        android:id="@+id/seekRed"
+                        android:layout_width="186dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:progressTint="@color/colorRed"
+                        android:rotation="270"
+                        android:scaleY="6"
+                        android:thumbTint="@color/colorRed" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewGreen"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Green"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18dp" />
+
+                <FrameLayout
+                    android:layout_width="32dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <SeekBar
+                        android:id="@+id/seekGreen"
+                        android:layout_width="180dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:progressTint="@color/colorPrimary"
+                        android:rotation="270"
+                        android:scaleY="6"
+                        android:thumbTint="@color/colorPrimary" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBlue"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Blue"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18dp" />
+
+                <FrameLayout
+                    android:layout_width="32dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <SeekBar
+                        android:id="@+id/seekBlue"
+                        android:layout_width="180dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:progressTint="@color/colorBlue"
+                        android:rotation="270"
+                        android:scaleY="6"
+                        android:thumbTint="@color/colorBlue" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewWhite"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="White"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18dp" />
+
+                <FrameLayout
+                    android:layout_width="32dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <SeekBar
+                        android:id="@+id/seekWhite"
+                        android:layout_width="180dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:progressTint="@color/colorWhite"
+                        android:rotation="270"
+                        android:scaleY="6"
+                        android:thumbTint="@color/colorWhite" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Presets.."
+                android:textSize="15dp">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btnPset1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_purple"
+                android:text="Preset1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="15dp"
+                android:tooltipText="0;0;0;0" />
+
+            <Button
+                android:id="@+id/btnPset2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tooltipText="0;0;0;0"
+                android:text="Preset2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:backgroundTint="@android:color/holo_purple"
+                android:textSize="15dp"
+                />
+            <Button
+                android:id="@+id/btnPset3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tooltipText="0;0;0;0"
+                android:text="Preset3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:backgroundTint="@android:color/holo_purple"
+                android:textSize="15dp"
+                />
+            <Button
+                android:id="@+id/btnPset4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tooltipText="0;0;0;0"
+                android:text="Preset4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:backgroundTint="@android:color/holo_purple"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/btnPset5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tooltipText="0;0;0;0"
+                android:text="Preset5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:backgroundTint="@android:color/holo_purple"
+                android:textSize="15dp"
+                />
+            <Button
+                android:id="@+id/btnPset6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tooltipText="0;0;0;0"
+                android:text="Preset6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:backgroundTint="@android:color/holo_purple"
+                android:textSize="15dp"
+                />
+            <Button
+                android:id="@+id/btnPset7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tooltipText="0;0;0;0"
+                android:text="Preset7"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:backgroundTint="@android:color/holo_purple"
+                android:textSize="15dp"
+                />
+            <Button
+                android:id="@+id/btnPset8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tooltipText="0;0;0;0"
+                android:text="Preset8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:backgroundTint="@android:color/holo_purple"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/saveManualRGBButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save on device"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:backgroundTint="@android:color/holo_purple"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

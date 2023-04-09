@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".StartActivity">
+
+
+        <Button
+            android:id="@+id/buttonstn"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="@drawable/normal_button"
+            android:text="Station Mode\nInternet"
+            android:layout_margin="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/buttonap"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/normal_button"
+            android:text="AP Mode\nNO Internet"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/buttonrgb"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/normal_button"
+            android:text="RGB Controller"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="30sp"  />
+        <Button
+            android:id="@+id/buttonSetup"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/normal_button"
+            android:text="Setup Node Mcu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="30sp"  />
+
+</LinearLayout>
