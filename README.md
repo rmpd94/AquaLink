@@ -14,5 +14,5 @@ Below some screenshots of the APP
 ![1678047997075](https://user-images.githubusercontent.com/119128158/222984401-07431e69-4819-454c-9de3-913e6700c36e.jpg)
 ![1678047997078](https://user-images.githubusercontent.com/119128158/222984411-08d51a90-62d6-41bc-8c06-1bf4e46b0c34.jpg)
 ![1678047997071](https://user-images.githubusercontent.com/119128158/222984418-8fee806c-65bc-468e-8eec-d0e28c301194.jpg)
-![Schematic_LED Dimmer_2022-03-18](https://user-images.githubusercontent.com/119128158/222984481-17ae7b1f-0ca0-479f-9e2c-cabc3cd6ab2d.png)
-[Mode Mcu Timer Diagram.pdf](https://github.com/rmpd94/AquaLink/files/10892892/Mode.Mcu.Timer.Diagram.pdf)
+[Mode Mcu Timer Diagram.pdf](https://github.com/rmpd94/AquaLink/files/11235383/Mode.Mcu.Timer.Diagram.pdf)
+[Schematic_LED Dimmer_2022-03-18.pdf](https://github.com/rmpd94/AquaLink/files/11235394/Schematic_LED.Dimmer_2022-03-18.pdf)
